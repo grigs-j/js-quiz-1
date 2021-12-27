@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="end.js" defer></script>
+        <title>JS Quiz Final Score</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="final-score"></h1>
+                <form action="">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="username"
+                    />
+                </form>
+                <button
+                    class="btn"
+                    type="submit"
+                    id="save-score-btn"
+                    onclick="saveHighScore(event)"
+                    disabled
+                >
+                    Save
+                </button>
+                <a href="./game.html" class="btn">Play Again</a>
+                <a href="index.html" class="btn">Back to Main Screen</a>
+            </div>
+        </div>
+    </body>
+</html>
